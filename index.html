@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paper Fortune</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<section id="setup">
+  <h1>Paper Fortune</h1>
+  <p class="sub">Write 8 dares. Your friend decides how many times you flip.</p>
+  <div id="rows"></div>
+  <div class="bar">
+    <button class="btn ghost" id="surprise">🎲 Surprise me</button>
+    <button class="btn" id="start" disabled>Start game</button>
+  </div>
+  <p class="hint" id="left"></p>
+</section>
+
+<section id="game" class="hide">
+  <div class="top">
+    <h1>Paper Fortune</h1>
+    <span class="chips"><button class="btn ghost" id="snd" aria-label="Sound on or off">🔊</button><button class="btn ghost" id="rst">↺ Reset</button><button class="btn ghost" id="reset">Edit dares</button></span>
+  </div>
+  <div class="pu" id="pu"></div>
+  <div class="stage">
+    <button id="paper" aria-label="Flip the paper"></button>
+  </div>
+  <div class="count" id="count"></div>
+  <p class="hint" id="hint"></p>
+  <div class="chips nums" id="nums"></div>
+</section>
+
+</main>
+<div class="ov hide" id="ov"><div class="card" id="card"></div></div>
+
+<script src="game.js"></script>
+</body>
+</html>
